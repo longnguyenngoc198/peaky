@@ -21,3 +21,67 @@ a {
     display: block;
     text-decoration: none;
 }
+
+
+
+.menu-btn {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+    display: none;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    left: 90%;
+}
+.icon {
+    width: 40px;
+    height: 4px;
+    background-color: var(--while-color);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon::after, .icon::before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: var(--while-color);
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+.icon::after {
+    top: -12px;
+}
+.icon::before {
+    top: 12px;
+}
+
+/* animation */
+.menu-btn.open .icon {
+    transform: translateX(-50px);
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn.open .icon::after {
+    transform: rotate(45deg) translate(35px, -35px);
+    background-color: #dadada;
+}
+.menu-btn.open .icon::before {
+   transform: rotate(-45deg) translate(52px, 18px);
+    background-color: #dadada;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.4;
+}

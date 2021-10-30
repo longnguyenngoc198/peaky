@@ -1,5 +1,7 @@
+.main {
+    overflow: hidden;
+}
 .header {
-    /* padding-top: 25%; */
     height: 402px;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,10 +39,15 @@
     text-shadow: 1px 1px 10px #000;
 }
 
-.carousel-container {
-    background-color: var(--bg-color);
-    padding: 75px 0;
+.container {
     width: 100%;
+    background-color: var(--bg-color);
+}
+
+.carousel-container {
+    
+    padding: 75px 0;
+    /* width: 100%; */
 }
 .slideshow-container {
     padding: 40px 0;
@@ -50,7 +57,7 @@
 }
 
 .slider {
-    display: flex;
+    float: right;
     width: 480px;
     height: 270px;
     background-position: center;
@@ -82,14 +89,61 @@
     letter-spacing: 2px;
     font-weight: 500;
 }
-
 .carousel-control {
     position: absolute;
     bottom: -20px;
     left: 95%;
-    
 }
 .carousel-button {
     color: #656565;
     font-size: 40px;
+}
+
+
+/* content */
+.features {
+    margin-top: 110px;
+}
+.feature {
+    align-items: center;
+    padding-bottom: 150px;
+}
+.feature:last-child {
+    padding-bottom: 24px;
+}
+.feature-text {
+    text-align: center;
+}
+.feature-text-left {
+    padding-left: 50px;
+}
+.feature-text-right {
+    padding-right: 50px;
+}
+.feature-text a {
+    font-size: 4.8rem;
+    color: #fff;
+    margin: 32px 0;
+}
+.feature-text a:hover {
+    opacity: 0.8;
+}
+.feature-text p {
+    font-size: 2.2rem;
+    line-height: 4.4rem;
+    color: #fff;
+}
+.feature-text img {
+    width: 50px;
+}
+.feature-img {
+    width: 100%;
+    left: 0;
+    height: calc(55vw * 0.5625);
+    z-index: 3;
+    box-shadow: 0px 0px 50px #080808;
+    overflow: hidden;
+}
+.feature-img img {
+   width: 100%;
 }
