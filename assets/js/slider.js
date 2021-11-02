@@ -2,7 +2,7 @@
         id: "carousel",
         rotation: {
             amount: 1, // How many elements it moves per rotation
-            timingFunction: "linear", // Timing function of the movement
+            timingFunction: "ease-in-out", // Timing function of the movement
             duration: 1000, // How long the movement takes
         },
         buttons: {

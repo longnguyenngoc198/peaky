@@ -15,26 +15,42 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/Carousel/carousel.min.css">
     <link rel="stylesheet" href="./assets/font/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
     <div class="main">
         <div class="header" style="background-image: url(./assets/images/logo/bg_header.jpg)">
-            <div class="header__logo">
+            <a href="" class="header__logo">
                 <img src="./assets/images/logo/logo.png" alt="" class="header__logo-img">
                 <h3 class="header__title">THE LEGITIMATE HOME FOR PEAKY BLINDERS</h3>
+            </a>
+            <div class="menu-btn">
+                <div class="icon"></div>
+            </div>
+            <div class="navbar-mobile-wrap">
+                <div class="grid wide">
+                    <ul class="navbar navbar-mobile">
+                        <li class="navbar-item navbar-mobile-item">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="navbar-item navbar-mobile-item">
+                            <a href="">About</a>
+                        </li>
+                        <li class="navbar-item navbar-mobile-item">
+                            <a href="">News</a>
+                        </li>
+                        <li class="navbar-item navbar-mobile-item">
+                            <a href="">Watch</a>
+                        </li>
+                        <li class="navbar-item navbar-mobile-item">
+                            <a href="">Shop</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="grid wide">
-                <div class="menu-btn">
-                    <div class="icon"></div>
-                </div>
-                <div class="modal">
-                    <div class="modal-body">
-
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="container">
@@ -125,9 +141,9 @@
 
             <div class="features">
                 <div class="grid">
-                    <div class="row feature">
-                        <div class="col l-5">
-                            <div class="feature-text feature-text-left">
+                    <div class="row feature feature-reverse">
+                        <div class="col l-5 m-5 c-12">
+                            <div class="feature-text feature-text-left ">
                                 <a href="">About</a>
                                 <p>A gangster family epic, set in the lawless streets of Birmingham post the First World War</p>
                                 <a href="">
@@ -135,7 +151,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-7">
+                        <div class="col l-7 m-7 c-12">
                             <a href="" class="feature-img">
                                 <img src="./assets/images/content/about.jpg" alt="">
                             </a>
@@ -143,12 +159,12 @@
                     </div>
 
                     <div class="row feature">
-                        <div class="col l-7">
+                        <div class="col l-7 m-7 c-12">
                             <a href="" class="feature-img">
                                 <img src="./assets/images/content/news.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col l-5">
+                        <div class="col l-5 m-5 c-12">
                             <div class="feature-text feature-text-right">
                                 <a href="">News</a>
                                 <p>The first place to hear about all things Peaky Blinders</p>
@@ -159,9 +175,9 @@
                         </div>
                     </div>
 
-                    <div class="row feature">
-                        <div class="col l-5">
-                            <div class="feature-text feature-text-left">
+                    <div class="row feature feature-reverse">
+                        <div class="col l-5 m-5 c-12">
+                            <div class="feature-text feature-text-left ">
                                 <a href="">Exclusives</a>
                                 <p>Exclusive access to content from the producers of Peaky Blinders</p>
                                 <a href="">
@@ -169,7 +185,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-7">
+                        <div class="col l-7 m-7 c-12">
                             <a href="" class="feature-img">
                                 <img src="./assets/images/content/exculuss.jpg" alt="">
                             </a>
@@ -178,12 +194,12 @@
                     </div>
 
                     <div class="row feature">
-                        <div class="col l-7">
+                        <div class="col l-7 m-7 c-12">
                             <a href="" class="feature-img">
                                 <img src="./assets/images/content/watch.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col l-5">
+                        <div class="col l-5 m-5 c-12">
                             <div class="feature-text feature-text-right">
                                 <a href="">Watch</a>
                                 <p>Catch up with Peaky Blinders in your region</p>
@@ -194,9 +210,9 @@
                         </div>
                     </div>
 
-                    <div class="row feature">
-                        <div class="col l-5">
-                            <div class="feature-text feature-text-left">
+                    <div class="row feature feature-reverse">
+                        <div class="col l-5 m-5 c-12">
+                            <div class="feature-text feature-text-left ">
                                 <a href="">Shop</a>
                                 <p>Legitimate Peaky Blinders merchandise</p>
                                 <a href="">
@@ -204,19 +220,254 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-7">
+                        <div class="col l-7 m-7 c-12">
                             <a href="" class="feature-img">
                                 <img src="./assets/images/content/shop.jpg" alt="">
                             </a>
                         </div>
-                       
+
                     </div>
 
                 </div>
             </div>
 
+            <div class="grid">
+                <div class="instagram-header">
+                    <a href="https://www.instagram.com/peakyblindersofficial/">
+                        <svg class="instagram-logo" role="img" viewBox="0 0 448 512">
+                            <path fill="#fff"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            </path>
+                        </svg>
+                        <p>peakyblindersofficial</p>
+                    </a>
+                </div>
 
+                <div class="instagram-container">
+                    <div class="grid">
+                        <div class="row instagram-list">
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/1.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/2.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/3.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/4.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/5.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/6.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/7.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/8.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/9.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/10.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/11.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/12.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/13.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/14.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/15.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/16.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/1.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/2.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/3.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/4.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/5.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/6.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/7.jpg);"></div>
+                                </a>
+                            </div>
+                            <div class="instagram-item col l-3 m-4 c-12">
+                                <a href="" class="instagram-item__link">
+                                    <div class="instagram-item__img" style="background-image: url(./assets/images/instagram/8.jpg);"></div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="load-btn-container">
+                        <button class="btn load-btn" id="load-btn">
+                            <span>Load More</span>
+                        </button>
+                        <a href="https://www.instagram.com/peakyblindersofficial/" class="btn flow-btn">
+                            <i class="fab fa-instagram"></i>
+                            <span>Follow on Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="grid">
+                    <div class="footer-background row">
+                        <div class="col l-4 c-12 m-12">
+                            <div class="footer-logo">
+                                <img src="./assets/images/footer/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col l-4 c-12 m-12">
+                            <ul class="navbar-footer">
+                                <li class="navbar-footer-item">
+                                    <a href="">Home</a>
+                                </li>
+                                <li class="navbar-footer-item">
+                                    <a href="">About</a>
+                                </li>
+                                <li class="navbar-footer-item">
+                                    <a href="">News</a>
+                                </li>
+                                <li class="navbar-footer-item">
+                                    <a href="">Watch</a>
+                                </li>
+                                <li class="navbar-footer-item">
+                                    <a href="">Shop</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-4 c-12 m-12">
+                            <div class="footer-logo">
+                                <img src="./assets/images/footer/2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="footer-background">
+                    <div class="footer-logo">
+                        <img src="./assets/images/footer/1.png" alt="">
+                    </div>
+                    <ul class="navbar-footer">
+                        <li class="navbar-footer-item">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="navbar-footer-item">
+                            <a href="">About</a>
+                        </li>
+                        <li class="navbar-footer-item">
+                            <a href="">News</a>
+                        </li>
+                        <li class="navbar-footer-item">
+                            <a href="">Watch</a>
+                        </li>
+                        <li class="navbar-footer-item">
+                            <a href="">Shop</a>
+                        </li>
+                    </ul>
+                    <div class="footer-logo">
+                        <img src="./assets/images/footer/2.png" alt="">
+                    </div>
+                </div> -->
+                <div class="social">
+                    <a href="" class="social-item">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="social-item">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="policy">
+                <div>
+                    <a href="">Privacy and Cookies Policy</a>
+                    <a href=""> Terms and Conditions</a>
+                </div>
+                <a href="">
+                    ™ Peaky Blinders © Caryn Mandabach Productions Limited 2013 – 2021
+                </a>
+                <a href="">
+                    AsOne
+                </a>
+            </div>
+        </footer>
     </div>
 
     <script src="./assets/js/main.js"></script>

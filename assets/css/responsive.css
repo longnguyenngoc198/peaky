@@ -3,171 +3,133 @@
     .hide-on-moblet {
         display: none;
     }
-    .tournament__content {
-        margin-top: 24px;
+    .features {
+        margin-top: 20px;
     }
-    .tournaments {
-        padding: 56px 0;
+
+    .slider {
+        margin: 0 8px 0 11px;
     }
-    .tournaments--wrap {
-        margin: 0 4px;
+    .slider__label {
+        left: 20px;
+        text-decoration: underline;
+        bottom: 20px;
+        top: unset;
+        transform: unset;
     }
-    .latest-post {
-        align-items: flex-start;
+    .slider__text--top {
+        font-size: 2.2rem;
+        margin: 0 0 8px 0;
+        line-height: 2.2rem;
+    }
+    .slider__text--bottom {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+
+    }
+
+    /* content */
+    
+    .feature-text a {
+        font-size: 3.3rem;
+        line-height: 3.3rem;
+    }
+    .feature-text p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    .navbar-footer {
+        padding: 80px 0;
+    }
+    .navbar-footer-item a {
+        font-size: 1.8rem;
+    }
+    .policy a {
+        font-size: 1.4rem;
     }
 }
-
 /* mobile */
 @media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
     }
-    .navbar {
-        padding: 0 20px;
+    .header__logo{
+        top: 70%;
+        left: 20px;
     }
-    .slider__text {
-        left: 40%;
-        top: 40%;
-        transform: translate(-50%, -50%);
+    .header__logo-img {
+        width: 130px;
     }
-    .slider__heading {
-        font-size: 2rem;
-        margin: 0;
+    .menu-btn {
+        display: flex;
     }
-    .slider_desc{
-        display: none;
+    .slider {
+        margin-left: 0;
     }
-    .prev, .netxt{
-        display: none;
+    .carousel-container {
+        padding-top: 53px;
     }
-    .slider__more {
-        margin-top: 12px;
-        padding: 4px 8px;
-        width: 110px;
-    }
-    .features {
-        padding: 46px 0;
-    }
+
+
+    /* content */
     .feature {
-        margin: 0 8px 16px 8px;
+        margin: 10px 10px 30px;
+        border: thick double #494949;
+        padding-bottom: 20px;
     }
-
-    .recent {
-        background-size: cover;
+    .feature-reverse {
+        flex-direction: column-reverse;
+        
     }
-     .recent {
-        padding: 46px 0;
+    .feature-text {
+        padding: 0 40px;
     }
-    .recent-label {
-        padding-bottom: 24px;
-    }
-    .recent-game {
-        margin: 0px 8px 12px;
-    }
-    .tournament {
-        margin-bottom: 24px;
-    }
-    .latest {
-        margin: 8px;
-    }
-
-    .header {
-        position: relative;
-    }
-    .mobile-menu {
-        display: block;
-    }
-    .navbar__list {
-        /* display: block; */
-        position: absolute;
-        z-index: 3;
-        left: 0;
+    .feature-img {
         width: 100%;
-        top: 100%;
-        background-color: var(--while-color);
-        /* animation: topbot 1s ease; */
-        overflow: hidden;
+        height: auto;
+        box-shadow: unset;
+    }
+    .feature-img img {
+        padding: 16px 8px;
     }
 
-    .test1 {
-        /* height: 0;
-        animation: bottop 1s ease; */
-        /* display: none; */
-        /* height: 0; */
+    .instagram-container {
+        padding: 0 5px 0 5px;
     }
-    .test2 {
-        animation: topbot 1s ease;
-        display: block;
+    .load-btn {
+        margin-right: 6px;
     }
-    @keyframes topbot{
-        from {
-            height: 0;
-        }
-        to {
-            height: 200px;
-        }
+    /* footer */
+    .footer {
+        padding: 40px 10px 0 10px;
     }
-    @keyframes bottop{
-        from {
-            height: 200px;
-        }
-        to {
-            height: 0;
-            /* display: none; */
-        }
+    .navbar-footer {
+        flex-direction: column;
+        padding: 40px 0;
     }
-    .navbar__item {
-        width: 100%;
-        margin: 0;
-        padding-left: 20px;
-        border-top: 1px solid #ececec;
+    .navbar-footer-item + .navbar-footer-item {
+        margin-left: 0;
     }
-    .navbar__link {
-        color: #000;
+    .navbar-footer-item a {
+        line-height: 3.2rem;
     }
-    
+
 }
-
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-    .navbar__item {
-        margin: 0 6px;
+    .header__logo {
+        top: 65%;
+        left: 40px;
     }
-    .navbar__link {
-        padding: 0;
+    .feature {
+        padding-bottom: 60px;
     }
-    .navbar__auth {
-        padding: 8px 11px
+    .instagram-container {
+        padding: 0 10px 0 10px;
     }
-    .slider__text {
-        left: 40%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .slider__heading {
-        font-size: 3rem;
-    }
-    .slider_desc{
-        line-height: 1.6;
-    }
-    .slider__more {
-        padding: 8px 10px;
-    }
-    .features {
-        padding: 62px 0;
-    }
-    .feature{
-        margin-bottom: 12px;
-    }
-    
-    .recent {
-        padding: 54px 0;
-    }
-    .recent-label {
-        padding-bottom: 32px;
-    }
-    .recent-game {
-        margin-bottom: 24px;
+    .footer {
+        padding: 50px 10px 0 10px;
     }
 }
 

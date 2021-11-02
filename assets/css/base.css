@@ -15,6 +15,10 @@ html {
     line-height: 1.6rem;
     font-family: 'Taviraj', serif;
     box-sizing: border-box;
+    overflow: visible;
+}
+.lockscroll {
+    overflow: hidden;
 }
 
 a {
@@ -22,29 +26,24 @@ a {
     text-decoration: none;
 }
 
-
-
 .menu-btn {
     width: 80px;
     height: 80px;
     position: relative;
     cursor: pointer;
-    position: relative;
     display: none;
     align-items: center;
-    transition: all 0.5s ease-in-out;
-    left: 90%;
+    top: 30px;
+    left: 80%;
+    z-index: 40;
 }
 .icon {
     width: 40px;
     height: 4px;
     background-color: var(--while-color);
     position: absolute;
-    top: 50px;
-    right: 0;
     transition: all 0.5s ease-in-out;
 }
-
 .icon::after, .icon::before {
     content: "";
     width: 40px;
@@ -74,14 +73,94 @@ a {
    transform: rotate(-45deg) translate(52px, 18px);
     background-color: #dadada;
 }
-
-.modal {
-    display: none;
+.navbar-mobile-wrap {
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
     background-color: #000;
-    opacity: 0.4;
+    z-index: 20;
+    transition: all 0.5s linear;
+    display: none;
+    
+}
+.navbar-mobile-wrap.open-bar {
+    display: block;
+    transform-origin: 94% top;
+    animation: skew 0.5s ease;
+}
+@keyframes skew {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.navbar {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.navbar-item {
+    padding: 8px 0;
+}
+.navbar-item a {
+    color: #fff;
+    font-size: 3.2rem;
+    line-height: 3.4rem;
+    text-decoration: underline;
+}
+.navbar-item:hover a {
+    color: #fff;
+    opacity: 0.8;
+    transition: all 0.3s ease-in
+}
+
+.load-btn-container {
+    margin-top: 8px;
+}
+.btn {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 9px 19px;
+    
+}
+.btn span {
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: underline;
+}
+.btn:hover{
+    background-color: #8b8b8c;
+    transition: all 0.5s linear;
+}
+.btn:hover span{
+    color: #333;
+    transition: all 0.5s linear;
+}
+.load-btn {
+    background-color: #333;
+    margin-right: 12px;
+}
+.btn i {
+    font-size: 1.8rem;
+    margin-right: 8px;
+    color: #fff;
+}
+.flow-btn {
+    background-color: #408bd1;
+    display: flex;
+    align-items: center;
 }
